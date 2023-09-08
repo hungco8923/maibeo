@@ -1,0 +1,40 @@
+.hero-section {
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+
+  &__video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    span {
+      color: $primary-color;
+    }
+    h1 {
+      font-size: 70px;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 64;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}

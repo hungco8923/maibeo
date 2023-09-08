@@ -1,0 +1,55 @@
+.navbarWrapper {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: white;
+  top: 0;
+}
+
+.navbar {
+  height: 60px;
+  padding-top: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    position: absolute;
+  }
+
+  &__menu {
+    flex-basis: 40%;
+    margin: auto;
+    &__list {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      height: 58px;
+      margin: 0;
+      padding: 0;
+
+      &__item {
+        padding: 0 10px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        a {
+          text-decoration: none;
+          color: $primary-color;
+          &:visited {
+            color: $primary-color;
+          }
+        }
+
+        &:hover {
+          border-bottom: 2px solid $primary-color;
+        }
+      }
+    }
+  }
+
+  &__ultilities__searchBar {
+    border-radius: 10px;
+  }
+}

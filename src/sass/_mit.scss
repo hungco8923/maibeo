@@ -1,0 +1,52 @@
+.mit {
+  background-image: url("../assets/img/bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  header {
+    background-image: url("../assets/img/3.jpg");
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+
+  h1 {
+    font-family: Tahoma;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+
+  /*Class cho đoạn text*/
+  .text {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(225, 208, 208);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+
+  h2,
+  h3 {
+    font-family: Tahoma;
+    text-align: left;
+  }
+
+  img {
+    border: 4px solid orange;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300;
+    height: 300px;
+  }
+
+  p {
+    font-family: Tahoma;
+    text-align: center;
+  }
+}
