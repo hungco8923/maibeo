@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/maibeo/static/css/main.d0a5465f.css",
+    "main.js": "/maibeo/static/js/main.beaec2bb.js",
+    "static/js/787.c1112931.chunk.js": "/maibeo/static/js/787.c1112931.chunk.js",
+    "static/media/Hero.mp4": "/maibeo/static/media/Hero.1955485b75190cefa2fb.mp4",
+    "static/media/óc.jpg": "/maibeo/static/media/óc.b5da3dca29b5795d2b2a.jpg",
+    "static/media/2.jpg": "/maibeo/static/media/2.e901b4dc5ffa7eb54018.jpg",
+    "static/media/1.jpg": "/maibeo/static/media/1.c93f30f17c0254c4069e.jpg",
+    "static/media/meal.jpg": "/maibeo/static/media/meal.55923fe93de999bc7e39.jpg",
+    "static/media/3.jpg": "/maibeo/static/media/3.dfc21c30f0852737202b.jpg",
+    "static/media/4.jpg": "/maibeo/static/media/4.df73287e1ec573ed67a6.jpg",
+    "static/media/bg.jpg": "/maibeo/static/media/bg.53b9fd0d22feb7b755b2.jpg",
+    "index.html": "/maibeo/index.html",
+    "main.d0a5465f.css.map": "/maibeo/static/css/main.d0a5465f.css.map",
+    "main.beaec2bb.js.map": "/maibeo/static/js/main.beaec2bb.js.map",
+    "787.c1112931.chunk.js.map": "/maibeo/static/js/787.c1112931.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d0a5465f.css",
+    "static/js/main.beaec2bb.js"
+  ]
+}
