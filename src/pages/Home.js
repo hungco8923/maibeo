@@ -12,6 +12,7 @@ const Home = () => {
           loop
           muted
           width={"100%"}
+          playsinline
         />
 
         <div className="hero-section__content">
