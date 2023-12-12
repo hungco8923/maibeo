@@ -34,7 +34,7 @@ const Cun = () => {
             </div>
           </Fade>
           <div className="cun__welcome__main">
-            <video src={ChaoAnhEmNhe} autoPlay muted loop playsinline />
+            <video src={ChaoAnhEmNhe} autoPlay muted loop playsInline />
           </div>
           <Fade right cascade>
             <div className="cun__welcome__right">
