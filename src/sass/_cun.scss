@@ -1,0 +1,421 @@
+.section {
+  width: 100%;
+  height: 100vh;
+}
+
+.cun {
+  &__welcome {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    &__left {
+      width: 33.33%;
+
+      &__content {
+        text-transform: uppercase;
+        font-size: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        left: 5%;
+        z-index: 1;
+        color: white;
+      }
+
+      .overlay {
+        background-color: rgba(0, 0, 0, 0.3);
+        position: absolute;
+        width: 33.33%;
+        height: 100vh;
+        top: 64px;
+      }
+      img {
+        width: 100%;
+        height: 100vh;
+      }
+    }
+    &__main {
+      width: 33.33%;
+      height: 100vh;
+      video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &__right {
+      width: 33.33%;
+
+      &__content {
+        text-transform: uppercase;
+        font-size: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        right: 5%;
+        z-index: 1;
+        color: white;
+      }
+
+      .overlay {
+        background-color: rgba(0, 0, 0, 0.3);
+        position: absolute;
+        width: 33.33%;
+        height: 100vh;
+        top: 64px;
+      }
+      img {
+        width: 100%;
+        height: 100vh;
+      }
+    }
+  }
+
+  &__mems {
+    width: 100%;
+    margin: 50px 0;
+    box-sizing: border-box;
+
+    &__header {
+      h2 {
+        font-size: 50px;
+      }
+    }
+
+    &__lists {
+      display: flex;
+      //   background-color: black;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      &__card {
+        width: 20%;
+        padding: 25px 12px;
+        margin: 0 20px;
+        box-sizing: border-box;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+          0 6px 6px rgba(0, 0, 0, 0.23);
+
+        &__img {
+          img {
+            width: 100%;
+          }
+        }
+
+        &__content {
+          h2 {
+            font-size: 30px;
+            margin: 15px 0;
+          }
+        }
+      }
+    }
+  }
+
+  &__travis {
+    display: flex;
+    img {
+      width: 33.33%;
+      height: 100vh;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    &__content {
+      font-size: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+      color: white;
+      align-items: center;
+
+      .title {
+        text-transform: uppercase;
+        font-size: 100px;
+      }
+
+      button {
+        padding: 8px 16px;
+        box-sizing: border-box;
+        width: 180px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+          0 6px 6px rgba(0, 0, 0, 0.23);
+      }
+    }
+  }
+}
+
+#fp-nav ul li {
+  a {
+    span {
+      background: black;
+    }
+  }
+
+  div {
+    color: black !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .section {
+    height: auto;
+  }
+  .cun {
+    width: 100%;
+    &__welcome {
+      flex-direction: column;
+
+      &__left {
+        width: 100%;
+        &__content {
+          text-transform: uppercase;
+          font-size: 120px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          position: absolute;
+          left: 20%;
+          z-index: 1;
+          color: white;
+        }
+
+        .overlay {
+          background-color: rgba(0, 0, 0, 0.3);
+          position: absolute;
+          width: 100%;
+          height: 100vh;
+          top: 64px;
+        }
+        img {
+          width: 100%;
+          height: 100vh;
+        }
+      }
+      &__main {
+        width: 100%;
+        height: 100vh;
+        video {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      &__right {
+        width: 100%;
+
+        &__content {
+          text-transform: uppercase;
+          font-size: 120px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          position: absolute;
+          left: 9%;
+          z-index: 1;
+          color: white;
+        }
+
+        .overlay {
+          background-color: rgba(0, 0, 0, 0.3);
+          position: absolute;
+          width: 100%;
+          height: 100vh;
+          top: calc(200vh + 64px);
+        }
+        img {
+          width: 100%;
+          height: 100vh;
+        }
+      }
+    }
+
+    &__mems {
+      &__lists {
+        flex-direction: column;
+        align-items: center;
+
+        &__card {
+          width: 90%;
+        }
+      }
+    }
+
+    &__travis {
+      .GYM,
+      .oc {
+        display: none;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      &__content {
+        font-size: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        color: white;
+        align-items: center;
+
+        .title {
+          text-transform: uppercase;
+          font-size: 50px;
+        }
+
+        button {
+          padding: 8px 16px;
+          box-sizing: border-box;
+          width: 180px;
+          border-radius: 5px;
+          border: none;
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+            0 6px 6px rgba(0, 0, 0, 0.23);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .section {
+    height: auto;
+  }
+  .cun {
+    width: 100%;
+    &__welcome {
+      flex-direction: column;
+
+      &__left {
+        width: 100%;
+        &__content {
+          text-transform: uppercase;
+          font-size: 120px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          position: absolute;
+          left: 5%;
+          z-index: 1;
+          color: white;
+        }
+
+        .overlay {
+          background-color: rgba(0, 0, 0, 0.3);
+          position: absolute;
+          width: 100%;
+          height: 100vh;
+          top: 64px;
+        }
+        img {
+          width: 100%;
+          height: 100vh;
+        }
+      }
+      &__main {
+        width: 100%;
+        height: 100vh;
+        video {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      &__right {
+        width: 100%;
+
+        &__content {
+          text-transform: uppercase;
+          font-size: 120px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          position: absolute;
+          left: 9%;
+          z-index: 1;
+          color: white;
+        }
+
+        .overlay {
+          background-color: rgba(0, 0, 0, 0.3);
+          position: absolute;
+          width: 100%;
+          height: 100vh;
+          top: calc(200vh + 64px);
+        }
+        img {
+          width: 100%;
+          height: 100vh;
+        }
+      }
+    }
+
+    &__mems {
+      &__lists {
+        flex-direction: column;
+        align-items: center;
+
+        &__card {
+          width: 90%;
+        }
+      }
+    }
+
+    &__travis {
+      .GYM,
+      .oc {
+        display: none;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      &__content {
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        color: white;
+        align-items: center;
+
+        .title {
+          text-transform: uppercase;
+          font-size: 50px;
+        }
+
+        button {
+          padding: 8px 16px;
+          box-sizing: border-box;
+          width: 180px;
+          border-radius: 5px;
+          border: none;
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+            0 6px 6px rgba(0, 0, 0, 0.23);
+        }
+      }
+    }
+  }
+}
