@@ -170,6 +170,134 @@
   }
 }
 
+@media only screen and (max-width: 860px) {
+  .section {
+    height: auto;
+  }
+  .cun {
+    width: 100%;
+    &__welcome {
+      flex-direction: column;
+
+      &__left {
+        width: 100%;
+        &__content {
+          text-transform: uppercase;
+          font-size: 120px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          position: absolute;
+          align-items: center;
+          left: 30%;
+          top: 20%;
+          z-index: 1;
+          color: white;
+        }
+
+        .overlay {
+          background-color: rgba(0, 0, 0, 0.3);
+          position: absolute;
+          width: 100%;
+          height: 100vh;
+          top: 64px;
+        }
+        img {
+          width: 100%;
+          height: 100vh;
+        }
+      }
+      &__main {
+        width: 100%;
+        height: 100vh;
+        video {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      &__right {
+        width: 100%;
+
+        &__content {
+          text-transform: uppercase;
+          font-size: 120px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          position: absolute;
+          left: 9%;
+          top: calc(20% + 200vh);
+          z-index: 1;
+          color: white;
+        }
+
+        .overlay {
+          background-color: rgba(0, 0, 0, 0.3);
+          position: absolute;
+          width: 100%;
+          height: 100vh;
+          top: calc(200vh + 64px);
+        }
+        img {
+          width: 100%;
+          height: 100vh;
+        }
+      }
+    }
+
+    &__mems {
+      &__lists {
+        flex-direction: column;
+        align-items: center;
+
+        &__card {
+          width: 90%;
+        }
+      }
+    }
+
+    &__travis {
+      .GYM,
+      .oc {
+        display: none;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      &__content {
+        font-size: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        color: white;
+        align-items: center;
+
+        .title {
+          text-transform: uppercase;
+          font-size: 60px;
+        }
+
+        button {
+          padding: 8px 16px;
+          box-sizing: border-box;
+          width: 180px;
+          border-radius: 5px;
+          border: none;
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+            0 6px 6px rgba(0, 0, 0, 0.23);
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 480px) {
   .section {
     height: auto;
